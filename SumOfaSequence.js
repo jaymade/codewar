@@ -11,6 +11,16 @@ const sequenceSum = (begin, end, step) => {
     return sum;
 };
 
+// short code
+// const sequenceSum = (begin, end, step) => {
+//     if (begin > end) {
+//         return 0;
+//     }
+//     return begin + sequenceSum(begin + step, end, step);
+// };
+// or
+// sequenceSum = (b, e, s) => b > e ? 0 : b + sequenceSum(b + s, e, s);
+
 sequenceSum(2, 6, 2) //12
 sequenceSum(1, 5, 1) //15
 sequenceSum(1, 5, 3) //5
